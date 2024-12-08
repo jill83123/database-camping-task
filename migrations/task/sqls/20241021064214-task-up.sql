@@ -502,7 +502,7 @@ INNER JOIN
 WHERE
   "CREDIT_PURCHASE".purchase_at BETWEEN '2024-12-01' AND '2024-12-31'
 GROUP BY
-  "CREDIT_PACKAGE".id
+  "CREDIT_PACKAGE".id;
 
 
 -- 6-4. 查詢：計算 11 月份總營收（使用 purchase_at 欄位統計）
@@ -513,7 +513,7 @@ SELECT
 FROM
   "CREDIT_PURCHASE"
 WHERE
-  "CREDIT_PURCHASE".purchase_at BETWEEN '2024-12-01' AND '2024-12-31'
+  "CREDIT_PURCHASE".purchase_at BETWEEN '2024-12-01' AND '2024-12-31';
 
 
 -- 6-5. 查詢：計算 11 月份有預約課程的會員人數（需使用 Distinct，並用 created_at 和 status 欄位統計）
